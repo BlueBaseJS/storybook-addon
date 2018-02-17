@@ -1,11 +1,11 @@
 {
-  "name": "bluerain-storybook-addons",
+  "name": "bluerain-storybook-addon",
   "version": "0.0.0",
   "description": "",
   "keywords": [],
-  "main": "dist/bluerain-storybook-addons.umd.js",
-  "module": "dist/bluerain-storybook-addons.es5.js",
-  "typings": "dist/types/bluerain-storybook-addons.d.ts",
+  "main": "dist/bluerain-storybook-addon.umd.js",
+  "module": "dist/bluerain-storybook-addon.es5.js",
+  "typings": "dist/types/bluerain-storybook-addon.d.ts",
   "files": [
     "dist"
   ],
@@ -37,7 +37,7 @@
   },
   "bundlesize": [
     {
-      "path": "./dist/bluerain-storybook-addons.es5.js",
+      "path": "./dist/bluerain-storybook-addon.es5.js",
       "maxSize": "3 kB"
     }
   ],
@@ -86,7 +86,7 @@
     "@blueeast/tslint-config-blueeast": "^0.4.0",
     "@types/jest": "^21.1.0",
     "@types/node": "^8.0.0",
-    "@types/react-native": "^0.51.9",
+    "@types/react": "^16.0.38",
     "awesome-typescript-loader": "^3.4.1",
     "babel-cli": "^6.26.0",
     "babel-preset-expo": "^4.0.0",
@@ -105,8 +105,6 @@
     "prompt": "^1.0.0",
     "prop-types": "^15.6.0",
     "react-dom": "^16.2.0",
-    "react-native-scripts": "1.8.1",
-    "react-native-typescript-transformer": "^1.2.3",
     "replace-in-file": "^3.0.0-beta.2",
     "rimraf": "^2.6.1",
     "semantic-release": "^8.0.0",
@@ -118,6 +116,6 @@
     "validate-commit-msg": "^2.12.2"
   },
   "dependencies": {
-    "@blueeast/bluerain-os": "^1.0.2"
+    "@blueeast/bluerain-os": "^3.4.0"
   }
 }
