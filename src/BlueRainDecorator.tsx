@@ -1,7 +1,6 @@
+import BR, { BlueRain, BootOptions } from '@blueeast/bluerain-os';
 // tslint:disable-next-line:no-implicit-dependencies
 import React from 'react';
-// tslint:disable-next-line:max-line-length
-import BR, { BlueRain , BootOptions } from '@blueeast/bluerain-os';
 
 const BlueRainDecorator = (configs: BootOptions) => (storyFn: any) => {
 

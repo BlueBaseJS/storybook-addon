@@ -3,8 +3,8 @@
   "version": "0.0.0",
   "description": "",
   "keywords": [],
-  "main": "dist/bluerain-storybook-addon.umd.js",
-  "module": "dist/bluerain-storybook-addon.es5.js",
+  "main": "dist/index",
+  "module": "dist/index.js",
   "typings": "dist/types/bluerain-storybook-addon.d.ts",
   "files": [
     "dist"
@@ -116,6 +116,6 @@
     "validate-commit-msg": "^2.12.2"
   },
   "dependencies": {
-    "@blueeast/bluerain-os": "^3.4.0"
+    "@blueeast/bluerain-os": "^3.4.1"
   }
 }
