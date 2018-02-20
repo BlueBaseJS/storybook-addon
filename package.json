@@ -127,6 +127,7 @@
     "validate-commit-msg": "^2.12.2"
   },
   "dependencies": {
+    "@blueeast/bluerain-cli": "^1.1.0",
     "@blueeast/bluerain-os": "^3.4.1",
     "@storybook/addon-actions": "^3.3.13",
     "@storybook/addon-knobs": "^3.3.13",
