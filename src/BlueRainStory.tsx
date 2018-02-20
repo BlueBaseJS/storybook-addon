@@ -1,6 +1,4 @@
-// import { withBlueRain } from '@blueeast/bluerain-os';
-// tslint:disable-next-line:max-line-length
-import { withBlueRain } from '/home/user/Desktop/Blueeast/bluerain-storybook-addon/node_modules/@blueeast/bluerain-os/dist/index';
+import { withBlueRain } from '@blueeast/bluerain-os';
 // tslint:disable-next-line:no-implicit-dependencies
 import React from 'react';
 
