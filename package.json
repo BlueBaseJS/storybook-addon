@@ -133,7 +133,7 @@
     "@storybook/addon-links": "^3.3.13",
     "@storybook/react": "^3.3.13",
     "@storybook/react-native": "^3.3.13",
-    "@types/react-native": "^0.51.9",
+    "@types/react-native": "^0.51.10",
     "@types/storybook__react": "^3.0.6",
     "react-native-storybook-loader": "^1.7.0"
   }

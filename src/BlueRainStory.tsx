@@ -1,11 +1,13 @@
-import { withBlueRain } from '@blueeast/bluerain-os';
+// import { withBlueRain } from '@blueeast/bluerain-os';
+// tslint:disable-next-line:max-line-length
+import { withBlueRain } from '/home/user/Desktop/Blueeast/bluerain-storybook-addon/node_modules/@blueeast/bluerain-os/dist/index';
 // tslint:disable-next-line:no-implicit-dependencies
 import React from 'react';
 
 const bluerainStory = (component: React.ComponentType<any>) => {
 	return () => {
-		const Story = withBlueRain(component);
-		return <Story />;
+		 const Story = withBlueRain(component);
+		 return <Story />;
 	};
 };
 
