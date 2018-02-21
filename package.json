@@ -1,11 +1,11 @@
 {
-  "name": "bluerain-storybook-addon",
+  "name": "@blueeast/bluerain-storybook-addon",
   "version": "0.0.0",
   "description": "",
   "keywords": [],
   "main": "dist/index",
   "module": "dist/index.js",
-  "typings": "dist/types/bluerain-storybook-addon.d.ts",
+  "typings": "dist/types/index.d.ts",
   "files": [
     "dist"
   ],
