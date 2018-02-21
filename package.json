@@ -9,10 +9,15 @@
   "files": [
     "dist"
   ],
-  "author": "BlueEast Team <code@blueeast.com>",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/BlueEastCode/bluerain-storybook-addon.git"
+  },
+  "author": "BlueEast Team <code@blueeast.com>",
+  "release": {
+    "branch": "master",
+    "dryRun": false,
+    "debug": true
   },
   "license": "MIT",
   "engines": {
@@ -33,7 +38,7 @@
     "deploy-docs": "ts-node tools/gh-pages-publish",
     "report-coverage": "cat ./coverage/lcov.info | coveralls && codecov",
     "commit": "git-cz",
-    "semantic-release": "semantic-release pre && npm publish && semantic-release post",
+    "semantic-release": "semantic-release",
     "semantic-release-prepare": "ts-node tools/semantic-release-prepare",
     "precommit": "lint-staged",
     "android": "react-native-scripts android",
@@ -95,9 +100,16 @@
   "devDependencies": {
     "@blueeast/bluerain-platform-reactxp": "^1.1.8",
     "@blueeast/tslint-config-blueeast": "^0.4.0",
+    "@storybook/addon-actions": "^3.3.13",
+    "@storybook/addon-knobs": "^3.3.13",
+    "@storybook/addon-links": "^3.3.13",
+    "@storybook/react": "^3.3.13",
+    "@storybook/react-native": "^3.3.13",
     "@types/jest": "^21.1.0",
     "@types/node": "^8.0.0",
     "@types/react": "^16.0.38",
+    "@types/react-native": "^0.51.10",
+    "@types/storybook__react": "^3.0.6",
     "awesome-typescript-loader": "^3.4.1",
     "babel-cli": "^6.26.0",
     "babel-preset-expo": "^4.0.0",
@@ -117,6 +129,7 @@
     "prop-types": "^15.6.0",
     "react-dom": "^16.2.0",
     "replace-in-file": "^3.0.0-beta.2",
+    "react-native-storybook-loader": "^1.7.0",
     "rimraf": "^2.6.1",
     "semantic-release": "^8.0.0",
     "ts-jest": "^22.0.0",
@@ -128,14 +141,6 @@
   },
   "dependencies": {
     "@blueeast/bluerain-cli": "^1.1.0",
-    "@blueeast/bluerain-os": "^3.4.1",
-    "@storybook/addon-actions": "^3.3.13",
-    "@storybook/addon-knobs": "^3.3.13",
-    "@storybook/addon-links": "^3.3.13",
-    "@storybook/react": "^3.3.13",
-    "@storybook/react-native": "^3.3.13",
-    "@types/react-native": "^0.51.10",
-    "@types/storybook__react": "^3.0.6",
-    "react-native-storybook-loader": "^1.7.0"
+    "@blueeast/bluerain-os": "^3.4.1"
   }
 }
