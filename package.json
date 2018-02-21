@@ -1,11 +1,11 @@
 {
-  "name": "bluerain-storybook-addons",
+  "name": "bluerain-storybook-addon",
   "version": "0.0.0",
   "description": "",
   "keywords": [],
-  "main": "dist/bluerain-storybook-addons.umd.js",
-  "module": "dist/bluerain-storybook-addons.es5.js",
-  "typings": "dist/types/bluerain-storybook-addons.d.ts",
+  "main": "dist/index",
+  "module": "dist/index.js",
+  "typings": "dist/types/bluerain-storybook-addon.d.ts",
   "files": [
     "dist"
   ],
@@ -19,6 +19,10 @@
     "node": ">=6.0.0"
   },
   "scripts": {
+    "storybook": "start-storybook -p 6006",
+    "storybook-native": "storybook start -p 7007",
+    "prestorybook-native": "rnstl",
+    "build-storybook": "build-storybook",
     "lint": "tslint -t codeFrame 'src/**/*.ts' 'test/**/*.ts'",
     "prebuild": "rimraf dist",
     "build": "bluerain build plugin",
@@ -37,7 +41,7 @@
   },
   "bundlesize": [
     {
-      "path": "./dist/bluerain-storybook-addons.es5.js",
+      "path": "./dist/bluerain-storybook-addon.es5.js",
       "maxSize": "3 kB"
     }
   ],
@@ -54,6 +58,13 @@
     "validate-commit-msg": {
       "types": "conventional-commit-types",
       "helpMessage": "Use \"npm run commit\" instead, we use conventional-changelog format :) (https://github.com/commitizen/cz-cli)"
+    },
+    "react-native-storybook-loader": {
+      "searchDir": [
+        "./src"
+      ],
+      "pattern": "**/*.stories.tsx",
+      "outputFile": "./storybook/storyLoader.tsx"
     }
   },
   "jest": {
@@ -86,7 +97,7 @@
     "@blueeast/tslint-config-blueeast": "^0.4.0",
     "@types/jest": "^21.1.0",
     "@types/node": "^8.0.0",
-    "@types/react-native": "^0.51.9",
+    "@types/react": "^16.0.38",
     "awesome-typescript-loader": "^3.4.1",
     "babel-cli": "^6.26.0",
     "babel-preset-expo": "^4.0.0",
@@ -105,8 +116,6 @@
     "prompt": "^1.0.0",
     "prop-types": "^15.6.0",
     "react-dom": "^16.2.0",
-    "react-native-scripts": "1.8.1",
-    "react-native-typescript-transformer": "^1.2.3",
     "replace-in-file": "^3.0.0-beta.2",
     "rimraf": "^2.6.1",
     "semantic-release": "^8.0.0",
@@ -118,6 +127,15 @@
     "validate-commit-msg": "^2.12.2"
   },
   "dependencies": {
-    "@blueeast/bluerain-os": "^1.0.2"
+    "@blueeast/bluerain-cli": "^1.1.0",
+    "@blueeast/bluerain-os": "^3.4.1",
+    "@storybook/addon-actions": "^3.3.13",
+    "@storybook/addon-knobs": "^3.3.13",
+    "@storybook/addon-links": "^3.3.13",
+    "@storybook/react": "^3.3.13",
+    "@storybook/react-native": "^3.3.13",
+    "@types/react-native": "^0.51.10",
+    "@types/storybook__react": "^3.0.6",
+    "react-native-storybook-loader": "^1.7.0"
   }
 }
