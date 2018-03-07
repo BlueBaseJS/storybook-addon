@@ -42,14 +42,3 @@ Please fill the informations requested OR use one of the following url:
 
 <!-- Optionally describe the technical changes to be made in semantic-release or its plugins. -->
 
-<!--------------------- FOR NEW PLUGIN REQUEST ONLY --------------------->
-
-# New plugin request
-
-## New plugin motivation
-
-<!-- Describe the reasons to create a new plugin and why it's not covered by the existing ones. -->
-
-## Third-party documentation
-
-<!-- Provide explanation and documentation links for the platform to integrate with. -->
