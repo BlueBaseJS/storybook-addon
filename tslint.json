@@ -1,5 +1,8 @@
 {
   "extends": [
     "@blueeast/tslint-config-blueeast/react"
-  ]
+	],
+	"rules": {
+		"no-implicit-dependencies": false
+	}
 }
