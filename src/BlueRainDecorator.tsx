@@ -1,8 +1,7 @@
-import BR, { BlueRain, BootOptions } from '@blueeast/bluerain-os';
-// tslint:disable-next-line:no-implicit-dependencies
+import { default as _BR, BlueRain, BootOptions } from '@blueeast/bluerain-os';
 import React from 'react';
 
-const BlueRainDecorator = (configs: BootOptions) => (storyFn: any) => {
+const BlueRainDecorator = (configs: BootOptions, BR = _BR) => (storyFn: any) => {
 
 	const Component = () => storyFn();
 
