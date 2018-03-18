@@ -98,11 +98,14 @@
     "mapCoverage": true
   },
   "devDependencies": {
+    "@blueeast/bluerain-cli": "^1.1.0",
+    "@blueeast/bluerain-os": "^3.4.1",
     "@blueeast/bluerain-platform-reactxp": "^1.1.8",
     "@blueeast/tslint-config-blueeast": "^0.4.0",
     "@storybook/addon-actions": "^3.3.13",
     "@storybook/addon-knobs": "^3.3.13",
     "@storybook/addon-links": "^3.3.13",
+    "@storybook/react": "^3.3.13",
     "@storybook/react-native": "^3.3.13",
     "@types/jest": "^21.1.0",
     "@types/node": "^8.0.0",
@@ -138,9 +141,7 @@
     "typescript": "^2.3.4",
     "validate-commit-msg": "^2.12.2"
   },
-  "dependencies": {
-    "@blueeast/bluerain-cli": "^1.1.0",
-    "@blueeast/bluerain-os": "^3.4.1",
-    "@storybook/react": "^3.3.13"
+  "peerDependencies": {
+    "@blueeast/bluerain-os": "*"
   }
 }
