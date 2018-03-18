@@ -142,6 +142,8 @@
     "validate-commit-msg": "^2.12.2"
   },
   "peerDependencies": {
-    "@blueeast/bluerain-os": "*"
+    "@blueeast/bluerain-os": "*",
+    "@storybook/react": "*",
+		"@storybook/react-native": "*"
   }
 }
