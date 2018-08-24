@@ -9,15 +9,9 @@
 npm i --save-dev @blueeast/bluerain-storybook-addon
 ```
 
-### Add to project
+### Configuration
 
-```js
-import '@blueeast/bluerain-storybook-addon';
-```
-
-### Usage
-
-```js
+```javascript
 import React from 'react';
 import { configure, addDecorator } from '@storybook/react';
 import { BlueRainDecorator } from '@blueeast/bluerain-storybook-addon';
@@ -30,4 +24,22 @@ function loadStories() {
 	req.keys().forEach((filename) => req(filename));
 }
 configure(loadStories, module);
+```
+
+### Usage
+
+In your story, test a BlueRain component like this:
+
+```javascript
+import { BlueRain, BlueRainConsumer } from '@blueeast/bluerain-os';
+import React from 'react';
+import storiesOf from '@blueeast/bluerain-storybook-addon';
+
+
+storiesOf('Some Story', module)
+	.add('story', () => (
+		<BlueRainConsumer>
+			{(BR: BlueRain) => <BR.Components.SomeComponent title="A nice component" />}
+		</BlueRainConsumer>
+	));
 ```
