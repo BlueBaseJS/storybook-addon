@@ -1,4 +1,4 @@
-import { default as _BR, BlueRain, BootOptions } from '@blueeast/bluerain-os';
+import { BlueRain, BootOptions, default as _BR } from '@blueeast/bluerain-os';
 import React from 'react';
 
 const BlueRainDecorator = (configs: BootOptions, BR = _BR) => (storyFn: any) => {
@@ -10,6 +10,7 @@ const BlueRainDecorator = (configs: BootOptions, BR = _BR) => (storyFn: any) => 
 		hooks: {
 			'bluerain.system.initialized': (ctx: BlueRain) => {
 				ctx.Components.replace('SystemLayout', Component);
+				return ctx;
 			}
 		}
 	};
@@ -22,6 +23,7 @@ const BlueRainDecorator = (configs: BootOptions, BR = _BR) => (storyFn: any) => 
 	allConfigs.plugins = allConfigs.plugins || [];
 	allConfigs.plugins.push(StorybookPlugin);
 
+	console.log('abot to boot', allConfigs);
 	const BluerainApp = BR.boot(allConfigs);
 	return <BluerainApp />;
 };
