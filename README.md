@@ -30,7 +30,7 @@ configure(loadStories, module);
 
 In your story, test a BlueRain component like this:
 
-```javascript
+```typescript
 import { BlueRain, BlueRainConsumer } from '@blueeast/bluerain-os';
 import React from 'react';
 import storiesOf from '@blueeast/bluerain-storybook-addon';
