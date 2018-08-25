@@ -5,7 +5,7 @@
   "keywords": [],
   "main": "dist/index",
   "module": "dist/index.js",
-  "typings": "dist/types/index.d.ts",
+  "typings": "dist/index.d.ts",
   "files": [
     "dist"
   ],
