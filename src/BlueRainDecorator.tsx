@@ -1,7 +1,9 @@
 import { BlueRain, BootOptions, default as _BR } from '@blueeast/bluerain-os';
 import React from 'react';
 
-const BlueRainDecorator = (configs: BootOptions, BR = _BR) => (storyFn: any) => {
+const BlueRainDecorator = (maybeEsConfigs: any, BR = _BR) => (storyFn: any) => {
+
+	const configs: BootOptions = maybeEsConfigs.default ? maybeEsConfigs.default : maybeEsConfigs;
 
 	const Component = () => storyFn();
 
