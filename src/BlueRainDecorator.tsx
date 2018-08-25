@@ -23,7 +23,6 @@ const BlueRainDecorator = (configs: BootOptions, BR = _BR) => (storyFn: any) => 
 	allConfigs.plugins = allConfigs.plugins || [];
 	allConfigs.plugins.push(StorybookPlugin);
 
-	console.log('abot to boot', allConfigs);
 	const BluerainApp = BR.boot(allConfigs);
 	return <BluerainApp />;
 };
