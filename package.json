@@ -1,7 +1,7 @@
 {
-  "name": "@blueeast/bluerain-storybook-addon",
-  "version": "0.1.0",
-  "description": "A storybook addon to test BlueRain components in Storybook",
+  "name": "@bluebase/storybook-addon",
+  "version": "2.0.0",
+  "description": "A Storybook JS addon to test BlueBase components in Storybook",
   "keywords": [],
   "main": "dist/index",
   "module": "dist/index.js",
@@ -11,7 +11,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/BlueEastCode/bluerain-storybook-addon.git"
+    "url": "https://github.com/BlueBaseJS/storybook-addon.git"
   },
   "author": "BlueEast Team <code@blueeast.com>",
   "release": {
@@ -85,7 +85,7 @@
     "mapCoverage": true
   },
   "devDependencies": {
-    "@blueeast/bluerain-os": "^3.4.1",
+    "@bluebase/core": "^4.0.0-aplha.2",
     "@blueeast/tslint-config-blueeast": "^0.5.6",
     "@storybook/react": "^3.3.13",
     "@storybook/react-native": "^3.3.13",
@@ -118,7 +118,7 @@
     "validate-commit-msg": "^2.12.2"
   },
   "peerDependencies": {
-    "@blueeast/bluerain-os": "*",
+    "@bluebase/core": "*",
     "@storybook/react": "*",
     "@storybook/react-native": "*"
   }
