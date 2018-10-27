@@ -6,7 +6,7 @@
 
 ### Installation:
 ```sh
-npm i --save-dev @blueeast/bluerain-storybook-addon
+npm i --save-dev @bluebase/storybook-addon
 ```
 
 ### Configuration
@@ -14,7 +14,7 @@ npm i --save-dev @blueeast/bluerain-storybook-addon
 ```javascript
 import React from 'react';
 import { configure, addDecorator } from '@storybook/react';
-import { BlueBaseDecorator } from '@blueeast/bluerain-storybook-addon';
+import { BlueBaseDecorator } from '@bluebase/storybook-addon';
 
 const BRConfigs = require('../bluerain');
 addDecorator(BlueBaseDecorator(BRConfigs));
@@ -33,7 +33,7 @@ In your story, test a BlueBase component like this:
 ```typescript
 import { BlueBase, BlueBaseConsumer } from '@blueeast/bluerain-os';
 import React from 'react';
-import storiesOf from '@blueeast/bluerain-storybook-addon';
+import storiesOf from '@bluebase/storybook-addon';
 
 
 storiesOf('Some Story', module)
