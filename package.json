@@ -1,6 +1,6 @@
 {
   "name": "@bluebase/storybook-addon",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "A Storybook JS addon to test BlueBase components in Storybook",
   "keywords": [],
   "main": "dist/index",
@@ -85,7 +85,7 @@
     "mapCoverage": true
   },
   "devDependencies": {
-    "@bluebase/core": "^4.0.0-aplha.2",
+    "@bluebase/core": "^4.0.0-aplha.4",
     "@blueeast/tslint-config-blueeast": "^0.5.6",
     "@storybook/react": "^3.3.13",
     "@storybook/react-native": "^3.3.13",
