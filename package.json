@@ -95,7 +95,7 @@
     "@types/react-native": "^0.56.12",
     "@types/storybook__react": "^3.0.6",
     "@types/storybook__react-native": "^3.0.1",
-    "bundlesize": "^0.17.0",
+    "bundlesize": "^0.18.0",
     "codecov": "^3.0.4",
     "colors": "^1.1.2",
     "commitizen": "^2.9.6",
