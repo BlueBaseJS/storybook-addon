@@ -109,7 +109,7 @@
     "react-dom": "^16.2.0",
     "react-native-storybook-loader": "^1.7.0",
     "rimraf": "^2.6.1",
-    "semantic-release": "^14.0.0",
+    "semantic-release": "^17.2.3",
     "ts-jest": "^23.1.4",
     "ts-node": "^7.0.1",
     "tslint": "^5.4.3",
